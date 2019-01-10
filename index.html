@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Helska Sensory.</title>
+		<meta name="author" content="Helska Engineering.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+		<script src="./Assets/jquery-3.3.1.min.js"></script>
+		<style>
+			body {background-color:black; color:white; clear:both;}
+			h1 {font-size: 35px !important;background-color:white;color:black;width:100%; max-width:300px;}
+			#app {
+				float: left;
+				position:fixed;
+				background-color:black;
+				padding: 2px;
+				width: 300px;
+				height: auto;
+				border: 1px rgb(255, 255, 255) solid;
+			}
+			#settings {
+				margin-left: 310px;
+				padding: 2px;
+				width: auto;
+				height: 100%;
+				border: 1px rgb(255, 255, 255) solid;
+			}
+			#container {
+				margin-left: 310px;
+				margin-top: 5px;
+				padding: 2px;
+				width: auto;
+				height: auto;
+				border: 1px rgb(255, 255, 255) solid;
+			}
+			#videoElement {
+				margin: auto;
+				width: inherit;
+				height: auto;
+			}
+			#settingsElement {
+				Margin: 0 auto;
+				width: auto;
+				height: 100px;
+			}
+			.left {float:left}
+			.right {float:right}
+		</style>
+    </head>
+    <body>
+		<div id = app>
+				<a href="https://helska.no">
+					<img src="./Assets/head_logo.png" alt="Helska.no" style="width:100%;"></a>
+			Ai: Sensor, cameras & TTY -interpreter. <br>Product is delivered by Helska Engineering.
+			<br><br><br>
+			<center>
+			<h1>Learning: <span id="distanceVal">0</span></h1>
+			<br>
+			<h1>Error: <span id="offsetVal">0</span></h1>
+			<canvas id="boogieWoogie"></canvas>
+			<br>
+		</center>
+		</DIV>
+		<div id = settings>
+				<label for="ports">COM: </label>
+				<select id="ports"></select>
+				<label for="mqtt"><span></span>mqtt</label>
+				<input id="mqtt" name="setting" type="checkbox">
+				<label for="sound"><span></span>serial</label>
+				<input id="sound" name="setting" type="checkbox">
+				<label for="AP"><span></span>ap</label>
+				<input id="AP" name="setting" type="checkbox">
+				<div id="output"></div>
+		</div>
+			<div id = container>
+				<center>Artificial Intelligence channeling.</center>
+				<br>
+				<div id=settingsElement>
+					<label for="aiText">(/ai?´text´)Ai text input:</label>
+					<textarea id="aiText" class="right"></textarea>
+				</div>
+				<div id=settingsElement>
+				<label for="camera">Camera: </label>
+				<select id="aiCamera"><option>Camera1</option></select>
+				<div id="videoElement">
+				</div>
+				</div>
+			</div>
+	    <script>
+		require('./renderer.js');
+        </script>
+    </body>
+</html>

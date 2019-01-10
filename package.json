@@ -4,7 +4,9 @@
   "description": "Sense IO App.",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "install": "electron-rebuild"
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,15 @@
   },
   "homepage": "https://github.com/Helgepower/Sensenode#readme",
   "dependencies": {
-    "http": "0.0.0"
+    "brain": "^1.0.0",
+    "brainjs": "^0.7.4",
+    "data-table": "^2.0.0",
+    "http": "0.0.0",
+    "serialport": "^7.1.2",
+    "webcamjs": "^1.0.25"
+  },
+  "devDependencies": {
+    "electron": "^1.4.1",
+    "electron-rebuild": "^1.8.2"
   }
 }
