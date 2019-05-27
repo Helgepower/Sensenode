@@ -1,3 +1,3 @@
 HELLO,
 
-Girgetter for this sensenode .. zuumm
+GitClone for this sensenode .. zuumm
