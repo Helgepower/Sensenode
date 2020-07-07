@@ -30,7 +30,7 @@
     "webcamjs": "^1.0.25"
   },
   "devDependencies": {
-    "electron": "^1.4.1",
+    "electron": "^9.1.0",
     "electron-rebuild": "^1.8.2"
   }
 }
